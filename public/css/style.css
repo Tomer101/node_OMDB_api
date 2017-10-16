@@ -1,0 +1,26 @@
+#movies img{
+    width: 100%;
+}
+
+@media(min-width:960px){
+    #movies .col-md-4 .well{
+        width: 360px;
+        height: 540px;
+    }
+}
+
+body{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: #455879; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #455879 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #455879 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #455879 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#455879', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+} 
+
+
+.well{
+    -moz-box-shadow:    1px 5px 50px 2px rgb(0, 0, 0);
+    -webkit-box-shadow: 1px 5px 50px 2px rgb(0, 0, 0);
+    box-shadow:         1px 5px 50px 2px rgb(0, 0, 0);
+}
