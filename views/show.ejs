@@ -1,4 +1,13 @@
+<% include partials/header %>
+
 <h1>MOVIE LIST: </h1>
-<% movieData["Search"].forEach(function(movie){ %>
-    <li><%= movie["Title"] %></li>
-<%  }) %>
+<ul>
+    <% movieData["Search"].forEach(function(movie){ %>
+        <li><%= movie["Title"] %></li>
+    <%  }) %>
+</ul>
+
+
+<a href="/">Go Back</a>
+
+<% include partials/footer %>

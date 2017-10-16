@@ -1,6 +1,21 @@
-<h1>SEARCH FOR A MOVIE</h1>
+<% include partials/header %>
 
-<form action="/show_movies" method="GET">
-    <input type="text" name="search" placeholder="search movie">
-    <input type="submit">
-</form>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Movie Browser</h1>
+            <h3 class="text-center">Enter The Movie You Want To Search</h3>
+            <form id="searchForm" action="/show_movies" method="GET">
+                <input class="form-control" type="text" name="search" placeholder="Search Movies">
+                <button type="submit" class="btn btn-primary center-block">Submit</button>
+            </form>
+        </div> 
+    </div>  
+    
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+
+
+
+
+<% include partials/footer %>
