@@ -1,14 +1,20 @@
 <% include partials/header %>
 
-<h1 class="text-center">MOVIE LIST: </h1>
+<div id="show-header">
+        <h3 class="text-center">Enter The Movie You Want To Search</h3>
+        <form id="searchForm" action="/show_movies" method="GET">
+           <input class="form-control" type="text" name="search" placeholder="Search Movies">
+       </form>
+   </div>
 
 <div class="container">
     <div id="movies" class="row">      
         <% movieData["Search"].forEach(function(movie){ %>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-3">
                 <div class="well text-center">
-                     <h4><%= movie["Title"] %></h4>
-                     <img src="<%= movie["Poster"] %>" alt="image not found">
+                    <img src="<%= movie["Poster"] %>" alt="image not found">
+                    <h5><%= movie["Title"] %></h4>
+                    <a class="btn btn-primary" href="#">More Details</a>
                  </div>
             </div>
         <%  }) %>

@@ -1,16 +1,20 @@
 <% include partials/header %>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="text-center">Movie Browser</h1>
-            <h3 class="text-center">Enter The Movie You Want To Search</h3>
-            <form id="searchForm" action="/show_movies" method="GET">
-                <input class="form-control" type="text" name="search" placeholder="Search Movies">
-                <button type="submit" class="btn btn-primary center-block">Submit</button>
-            </form>
-        </div> 
-    </div>  
-
-
+    <div id="landing-header">
+         <h1>Movie Browser</h1>
+         <h3 class="text-center">Enter The Movie You Want To Search</h3>
+         <form id="searchForm" action="/show_movies" method="GET">
+            <input class="form-control" type="text" name="search" placeholder="Search Movies">
+            <button type="submit" class="btn btn-lg btn-primary center-block">Submit</button>
+        </form>
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
 <% include partials/footer %>
