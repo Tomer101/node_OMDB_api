@@ -7,20 +7,25 @@
     width: 100%;
 }
 
-#movies .col-md-3 .well{
-  height: 410px;
+
+@media(min-width:960px){
+
+  #movies .col-md-3 .well{
+    height: 410px;
+  }
+  
+  #movies .col-md-3 img{
+    height: 291px;
+    margin-top: 10px;
+    border-radius: 3px
+  }
+  
+  #show-header{
+    margin: 34px auto;
+    width: 70%;
+  }
 }
 
-#movies .col-md-3 img{
-  height: 291px;
-  margin-top: 10px;
-  border-radius: 3px
-}
-
-#show-header{
-  margin: 34px auto;
-  width: 70%;
-}
 body{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
 background: #455879 ; /* Old browsers */
