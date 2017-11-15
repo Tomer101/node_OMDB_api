@@ -14,8 +14,13 @@ app.get('/show_movies', (req, res)=>{
     let search= req.query.search
     request("https://omdbapi.com/?s=" +search + "&apikey=thewdb", (error, respone, body)=>{
         if(!error && respone.statusCode == 200){
-            //parse the JSON data into an object
+            /*Parse the data with JSON.parse(), 
+            and the data becomes a JavaScript object.*/
             let movieData = JSON.parse(body);
+            //if movie name does not exist - redirect to home page
+            if(movieData.Error == "Movie not found!")
+                    res.redirect('/');
+                    
             res.render('show', {movieData: movieData});
         }
     });
