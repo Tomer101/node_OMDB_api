@@ -7,7 +7,7 @@ Feel free to contribute to this project and make it even more awesome while im s
 this project use "The Movie Data Base API"
 
 ## installation 💾
-1.in your CMD write npm install
+1. in your CMD write npm install
 2. npm start (or nodemon if you use nodemon install globaly)
 
 ## Future improvements 💡
