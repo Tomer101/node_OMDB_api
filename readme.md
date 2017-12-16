@@ -6,10 +6,10 @@ Feel free to contribute to this project and make it even more awesome while im s
 
 this project use "The Movie Data Base API"
 
-##Future improvements 💡
+#Future improvements 💡
 1. edit the single movie page
 2. design the homepage screen
 3. support TV shoes(?)
 
-###Images 📷
+#Images 📷
 ![](https://snag.gy/TdCI3z.jpg)
