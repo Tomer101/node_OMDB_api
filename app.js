@@ -9,10 +9,13 @@ app.get('/', (req, res)=>{
     res.render('home');
 });
 
+
+
+//GET route for movies query
 app.get('/show_movies', (req, res)=>{
     //getting the query from the home form
     let search= req.query.search
-    request("https://omdbapi.com/?s=" +search + "&apikey=thewdb", (error, respone, body)=>{
+    request("https://api.themoviedb.org/3/search/movie?api_key=31e155047c17420adf9cd9a5d0c9f09e&language=en-US&page=1&include_adult=false&query="+search, (error, respone, body)=>{
         if(!error && respone.statusCode == 200){
             /*Parse the data with JSON.parse(), 
             and the data becomes a JavaScript object.*/
@@ -21,11 +24,12 @@ app.get('/show_movies', (req, res)=>{
             if(movieData.Error == "Movie not found!")
                     res.redirect('/');
                     
-            res.render('show', {movieData: movieData});
+            res.render('show', {movieData: movieData, search: search});
         }
     });
 });
 
+//route for a single movie
 app.get('/show/:movie', (req, res)=>{
     //getting the movie id from the route params
     let movieId= req.params.movie
