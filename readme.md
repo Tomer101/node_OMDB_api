@@ -11,9 +11,9 @@ this project use "The Movie Data Base API"
 2. npm start (or nodemon if you use nodemon install globaly)
 
 ## Future improvements 💡
-1. edit the single movie page
+1. ~~edit the single movie page~~
 2. design the homepage screen
-3. support TV shoes(?)
+3. support TV show(?)
 
 ## Images 📷
 ![](https://snag.gy/TdCI3z.jpg)
