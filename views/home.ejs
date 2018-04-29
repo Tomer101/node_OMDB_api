@@ -10,15 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
     <title>Movie Browser</title>
 </head>
+    <main class="wrapper">
+        <div id="landing-header">
+            <h1>Movie Browser</h1>
+            <h3 class="text-center">Enter The Movie You Want To Search</h3>
+            <form id="searchForm" action="/movies" method="GET">
+               <input class="form-control" type="text" name="search" placeholder="Search Movies">
+               <button type="submit" class="btn btn-lg btn-primary center-block">Submit</button>
+           </form>
+       </div>
+    </main>
 
-    <div id="landing-header">
-         <h1>Movie Browser</h1>
-         <h3 class="text-center">Enter The Movie You Want To Search</h3>
-         <form id="searchForm" action="/show_movies" method="GET">
-            <input class="form-control" type="text" name="search" placeholder="Search Movies">
-            <button type="submit" class="btn btn-lg btn-primary center-block">Submit</button>
-        </form>
-    </div>
     
     <ul class="slideshow">
       <li></li>

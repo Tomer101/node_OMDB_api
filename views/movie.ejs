@@ -1,0 +1,26 @@
+<% include partials/header %>
+    <div class="container">  
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://image.tmdb.org/t/p/w500//<%= movieData.poster_path%>" alt="image not found" class="thumbnail">  
+            </div>
+            <div class="col-md-8">
+                <h2><%=movieData.title%></h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Genre: </strong> <%=movieData.release_date%></li>
+                    <li class="list-group-item"><strong>Genre: </strong> <%=movieData.genres[0].name  || movieData.genres.name%></li>
+                    <li class="list-group-item"><strong>Released: </strong> <%=movieData.release_date%></li>
+                    <li class="list-group-item"><strong>Vote average: </strong><%=movieData.vote_average%> </li>
+                </ul>
+                <div class="well">
+                    <h3>Plot</h3>
+                    <p><%=movieData.overview%></p>
+                    <hr>
+                    <a href="http://imdb.com/title/<%= movieData.imdb_id%>" target="_blank" class="btn btn-primary">View IMDB</a>
+                    <a href="/" class="btn btn-default">Go Back To Search</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+ 
+<% include partials/footer %>
